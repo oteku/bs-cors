@@ -1,0 +1,28 @@
+{
+  "name": "bs-cors",
+  "version": "0.0.1",
+  "description": "Buckelscript bindings to cors middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "buckelscript",
+    "reasonml",
+    "expressjs",
+    "cors",
+    "middleware"
+  ],
+  "author": "oteku",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "bs-platform": "^7.2.2",
+    "bs-express": "^1.0.1",
+    "cors": "^2.8.5"
+  },
+  "peerDependencies": {
+    "bs-express": "^1.0.1",
+    "cors": "^2.8.5"
+  },
+  "dependencies": {}
+}
