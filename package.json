@@ -1,6 +1,6 @@
 {
   "name": "bs-cors",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Buckelscript bindings to cors middleware",
   "main": "src/index.bs.js",
   "homepage": "https://github.com/oteku/bs-cors#readme",

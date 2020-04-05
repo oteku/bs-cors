@@ -12,7 +12,7 @@
     }
   ],
   "suffix": ".bs.js",
-  "namespace": true,
+  "namespace": false,
   "bs-dependencies": ["bs-express"],
   "refmt": 3
 }
