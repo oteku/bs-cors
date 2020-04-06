@@ -21,7 +21,7 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```sh
-$ npm install bs-cors
+$ npm install cors bs-cors
 ```
 
 then add it as a dependency to your **bs-config.json** :
@@ -273,7 +273,7 @@ let cors:
   - `Function((option(string), (option(Js.Exn.t), bool) => unit) => unit)` - set `origin` to a function implementing some custom logic. The function takes the request origin as the first parameter and a callback
 - `methods`: Configures the **Access-Control-Allow-Methods** CORS header. Expects an array (ex: `Express.Request.([|Get, Put, Post|])`).
 - `allowedHeaders`: Configures the **Access-Control-Allow-Headers** CORS header. Expects an optional array (ex: `Some([|"Content-Type", "Authorization"|])`). If not specified, defaults to reflecting the headers specified in the request's **Access-Control-Request-Headers** header.
-- `exposedHeaders`: Configures the **Access-Control-Expose-Headers** CORS header. Expects an optional array (ex: `Some(["Content-Range", "X-Content-Range"])`). If not specified, no custom headers are exposed.
+- `exposedHeaders`: Configures the **Access-Control-Expose-Headers** CORS header. Expects an optional array (ex: `Some([|"Content-Range", "X-Content-Range"|])`). If not specified, no custom headers are exposed.
 - `credentials`: Configures the **Access-Control-Allow-Credentials** CORS header. Set to `true` to pass the header, or `false` to be omitted.
 - `maxAge`: Configures the **Access-Control-Max-Age** CORS header. Set to an optional integer to pass the header, otherwise it is omitted.
 - `preflightContinue`: Pass the CORS preflight response to the next handler.
